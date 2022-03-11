@@ -44,12 +44,12 @@
             
             <!-- Team -->
             <div class="inputField">
-                <label for="TeamName">Team Name:</label>
+                <label for="TeamName">Opponent name:</label>
                 <input id="TeamName" type="text" placeholder="Team Name">
             </div>
             <div class="inputField">
-                <label for="TeamLogo">Team Logo:</label>
-                <input id="TeamLogo" type="file" onchange="document.getElementById('logo').src = window.URL.createObjectURL(this.files[0])">
+                <label for="TeamLogo">Opponent logo:</label>
+                <input id="TeamLogo" type="file" />
             </div>
 
             <!-- Details -->
@@ -80,6 +80,17 @@
         </div>
 
         <div class="liveview">
+
+            <div class="preview" id="previewImage">
+                <div class="previewPane">Please note: This is a preview, things may appear broken or misaligned.</div>
+                <img src="images/prematchposterBG.jpg" id="preivewimage" />
+            </div>
+
+        </div>
+    </main>
+
+    <div class="downloadview">
+        <div class="hiddenPreview" id="hiddenPreview">
             <div class="squad"></div>
             <div class="NBTeam">New Brighton</div>
             <div class="NBTeamLogo TeamLogoContainer">
@@ -87,7 +98,7 @@
             </div>
             <div class="TeamName"></div>
             <div class="OtherTeamLogo TeamLogoContainer">
-                <img class="TeamLogo" src="" id="logo"/>
+                <img class="TeamLogo logo" src="" />
             </div>
             <div class="details details--League"></div>
             <div class="details details--Date"></div>
@@ -95,7 +106,7 @@
             <div class="kickOff"></div>
             <img src="images/prematchposterBG.jpg" class="bg" />
         </div>
-    </main>
+    </div>
 
 
 	<script src="scripts.js"></script>

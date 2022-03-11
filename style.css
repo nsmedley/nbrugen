@@ -1,14 +1,14 @@
 body {
-  background: #eee;
+  background: #fff;
   margin: 0;
-  padding: 0;
+  padding: 20px;
   font-family: "Open Sans", sans-serif;
+  overflow: hidden;
 }
 
 nav {
   background: #103b8fff;
-  cursor: not-allowed;
-  opacity: 0.7;
+  margin-bottom: 60px;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -130,10 +130,36 @@ main .liveview {
   width: 874px;
   height: 874px;
   position: relative;
+  -webkit-transform: scale(68%);
+          transform: scale(68%);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
 }
 
-main .liveview .bg {
+main .liveview .preview {
+  position: relative;
+}
+
+main .liveview .preview .previewPane {
+  background: rgba(255, 255, 255, 0.7);
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
   width: 100%;
+  line-height: 30px;
+  z-index: 10;
+  position: absolute;
+}
+
+main .liveview .preview #preivewimage {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+}
+
+main .liveview .preview canvas {
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 main .liveview div {
@@ -146,7 +172,7 @@ main .liveview .squad {
   color: #fff;
   font-size: 60px;
   top: 182px;
-  left: 174px;
+  left: 170px;
 }
 
 main .liveview .NBTeam {
@@ -161,6 +187,9 @@ main .liveview .NBTeam {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .liveview .NBTeamLogo {
@@ -217,6 +246,9 @@ main .liveview .TeamName {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .liveview .TeamName--home {
@@ -252,6 +284,163 @@ main .liveview .details--Ground {
 }
 
 main .liveview .kickOff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #202020;
+  font-size: 87.5px;
+  bottom: 43px;
+  right: 80px;
+  width: 241px;
+  height: 68px;
+  line-height: 34px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.downloadview {
+  width: 874px;
+  height: 874px;
+  position: absolute;
+  left: -9999px;
+}
+
+.downloadview .hiddenPreview {
+  position: relative;
+}
+
+.downloadview .hiddenPreview .bg {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+}
+
+.downloadview div {
+  position: absolute;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+}
+
+.downloadview .squad {
+  color: #fff;
+  font-size: 60px;
+  top: 182px;
+  left: 170px;
+}
+
+.downloadview .NBTeam {
+  display: none;
+  color: #202020;
+  font-size: 35px;
+  top: 403px;
+  left: 76px;
+  width: 110px;
+  height: 68px;
+  line-height: 34px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.downloadview .NBTeamLogo {
+  display: none;
+}
+
+.downloadview .TeamLogoContainer {
+  width: 110px;
+  height: 110px;
+  position: relative;
+  position: absolute;
+}
+
+.downloadview .TeamLogoContainer img {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.downloadview .TeamLogoContainer--home {
+  left: 76px;
+  top: 280px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 110px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.downloadview .TeamLogoContainer--away {
+  left: 293px;
+  top: 280px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 110px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.downloadview .TeamName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #202020;
+  font-size: 35px;
+  top: 403px;
+  left: 76px;
+  width: 110px;
+  height: 68px;
+  line-height: 34px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.downloadview .TeamName--home {
+  top: 403px;
+  left: 76px;
+}
+
+.downloadview .TeamName--away {
+  top: 403px;
+  left: 293px;
+}
+
+.downloadview .details {
+  color: #202020;
+  font-size: 25px;
+  width: 240px;
+  line-height: 34px;
+}
+
+.downloadview .details--League {
+  top: 514px;
+  left: 117px;
+}
+
+.downloadview .details--Date {
+  top: 540px;
+  left: 120px;
+}
+
+.downloadview .details--Ground {
+  top: 563px;
+  left: 118px;
+}
+
+.downloadview .kickOff {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

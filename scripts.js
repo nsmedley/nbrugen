@@ -30,6 +30,10 @@ $(function() {
             $('.NBTeamLogo').css('display', 'flex');
         }
 
+        //Update preview image
+        html2canvas($("#hiddenPreview")[0]).then((canvas) => {
+            $("#previewImage").append(canvas);
+        });
     });
 
 
@@ -38,9 +42,16 @@ $(function() {
         dateFormat: "D d M yy",
     });
 
+    //Update Logo
+    $(':input[type=file]').change( function(event) {
+        var tmppath = URL.createObjectURL(event.target.files[0]);
+        //get parent using closest and then find img element
+        $(".logo").attr('src',tmppath);
+    });
+
     //Download Button
     $("#download").click(function() {
-        html2canvas(document.querySelector(".liveview")).then(canvas => {
+        html2canvas(document.querySelector(".hiddenPreview")).then(canvas => {
             canvas.toBlob(function(blob) {
                 window.saveAs(blob, 'match.jpg');
             });
