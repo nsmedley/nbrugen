@@ -1,0 +1,272 @@
+body {
+  background: #eee;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  background: #103b8fff;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 1300px) {
+  nav {
+    display: none;
+  }
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  padding: 20px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .options {
+  margin: 20px;
+  position: relative;
+}
+
+main .options .inputField {
+  padding: 10px 20px;
+  color: #202020;
+  width: calc(100% - 20px);
+}
+
+main .options .inputField input[type=text] {
+  width: 100%;
+  height: 32px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  padding-left: 10px;
+  border: solid 1px #cecece;
+  border-radius: 4px;
+}
+
+main .options .inputField input[type=radio] {
+  display: inline-block;
+}
+
+main .options .inputField .radioLabel {
+  display: inline-block;
+  height: 32px;
+}
+
+main .options .inputField label {
+  display: block;
+}
+
+main .options .inputField #generate {
+  padding: 15px 30px;
+  background: #e63946ff;
+  color: #eee;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  width: 50%;
+  border: none;
+  border-radius: 4px 0px 0px 4px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+main .options .inputField #generate:hover {
+  background: #d21a28;
+}
+
+main .options .inputField #download {
+  padding: 15px 30px;
+  background: #052546ff;
+  color: #eee;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  border: none;
+  width: 50%;
+  border-radius: 0px 4px 4px 0px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+main .options .inputField #download:hover {
+  background: #083e76;
+}
+
+main .options .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+main .liveview {
+  width: 874px;
+  height: 874px;
+  position: relative;
+}
+
+main .liveview .bg {
+  width: 100%;
+}
+
+main .liveview div {
+  position: absolute;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+}
+
+main .liveview .squad {
+  color: #fff;
+  font-size: 60px;
+  top: 182px;
+  left: 174px;
+}
+
+main .liveview .NBTeam {
+  display: none;
+  color: #202020;
+  font-size: 35px;
+  top: 403px;
+  left: 76px;
+  width: 110px;
+  height: 68px;
+  line-height: 34px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .liveview .NBTeamLogo {
+  display: none;
+}
+
+main .liveview .TeamLogoContainer {
+  width: 110px;
+  height: 110px;
+  position: relative;
+  position: absolute;
+}
+
+main .liveview .TeamLogoContainer img {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+main .liveview .TeamLogoContainer--home {
+  left: 76px;
+  top: 280px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 110px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .liveview .TeamLogoContainer--away {
+  left: 293px;
+  top: 280px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 110px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .liveview .TeamName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #202020;
+  font-size: 35px;
+  top: 403px;
+  left: 76px;
+  width: 110px;
+  height: 68px;
+  line-height: 34px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .liveview .TeamName--home {
+  top: 403px;
+  left: 76px;
+}
+
+main .liveview .TeamName--away {
+  top: 403px;
+  left: 293px;
+}
+
+main .liveview .details {
+  color: #202020;
+  font-size: 25px;
+  width: 240px;
+  line-height: 34px;
+}
+
+main .liveview .details--League {
+  top: 514px;
+  left: 117px;
+}
+
+main .liveview .details--Date {
+  top: 540px;
+  left: 120px;
+}
+
+main .liveview .details--Ground {
+  top: 563px;
+  left: 118px;
+}
+
+main .liveview .kickOff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #202020;
+  font-size: 87.5px;
+  bottom: 43px;
+  right: 80px;
+  width: 241px;
+  height: 68px;
+  line-height: 34px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */

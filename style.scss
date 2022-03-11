@@ -1,0 +1,251 @@
+$oxford-blue: #052546ff;
+$royal-blue-dark: #092c6eff;
+$dark-cornflower-blue: #103b8fff;
+$imperial-red: #e63946ff;
+$white: #eee;
+$black: #202020;
+$bebas: 'Bebas Neue', cursive;
+$opensans: 'Open Sans', sans-serif;
+
+
+body {
+    background: $white;
+    margin:0;
+    padding:0;
+    font-family: $opensans;
+}
+
+nav {
+    background:$dark-cornflower-blue;
+    cursor: not-allowed;
+    opacity: 0.7;
+
+    @media only screen and (max-width: 1300px) {
+        display:none;
+    }
+
+    ul {
+        display:flex;
+        justify-content: space-between;
+        list-style: none;
+        color:$white;
+        margin:0;
+        padding:0;
+    }
+
+    li {
+        padding:20px;
+        transition: all .3s ease;
+
+        // &:hover {
+        //     background: $royal-blue-dark;
+        //     cursor: pointer;
+        // }
+    }
+}
+
+main {
+    display:flex;
+    background:#fff;
+    justify-content: space-between;
+
+    .options {
+        margin:20px;
+        position: relative;
+
+        .inputField {
+            padding:10px 20px;
+            color:$black;
+            width:calc(100% - 20px);
+
+            input[type=text] {
+                width:100%;
+                height:32px;
+                font-size:18px;
+                font-family: $opensans;
+                padding-left: 10px;
+                border:solid 1px #cecece;
+                border-radius: 4px;
+            }
+
+            input[type=radio] {
+                display:inline-block;
+            }
+
+            .radioLabel {
+                display:inline-block;
+                height: 32px;
+            }
+
+            label {
+                display:block;
+            }
+
+            #generate {
+                padding:15px 30px;
+                background:$imperial-red;
+                color:$white;
+                font-family: $opensans;
+                font-weight: bold;
+                font-size:24px;
+                width:50%;
+                border:none;
+                border-radius: 4px 0px 0px 4px;
+                transition: all .3s ease;
+                cursor: pointer;
+
+                &:hover {
+                    background: darken(#e63946, 10%);
+                }
+            }
+
+            #download {
+                padding:15px 30px;
+                background:$oxford-blue;
+                color:$white;
+                font-family: $opensans;
+                font-weight: bold;
+                font-size:24px;
+                border:none;
+                width:50%;
+                border-radius: 0px 4px 4px 0px;
+                transition: all .3s ease;
+                cursor: pointer;
+
+                &:hover {
+                    background: lighten(#052546, 10%);
+                }
+            }
+        }
+
+        .buttons {
+            display:flex;
+            width: 100%;
+            padding: 10px 20px;
+        }
+    }
+
+    .liveview {
+        width:874px;
+        height:874px;
+        position: relative;
+
+        .bg {
+            width:100%;
+        }
+        
+        div {
+            position: absolute;
+            font-family: $bebas;
+            text-align: center;
+        }
+
+        .squad {
+            color:#fff;
+            font-size:60px;
+            top:182px;
+            left:174px;
+        }
+
+        .NBTeam {
+            display:none;
+            color:$black;
+            font-size:35px;
+            top:403px;
+            left:76px;
+            width:110px;
+            height:68px;
+            line-height: 34px;
+            align-items: center;
+        }
+
+        .NBTeamLogo {
+            display:none;
+        }
+
+        .TeamLogoContainer {
+            width:110px;
+            height:110px;
+            position: relative;
+            position: absolute;
+
+            img {
+                width: 100%;
+                height: fit-content;
+            }
+
+            &--home {
+                left:76px;
+                top:280px;
+                object-fit: contain;
+                height: 110px;
+                align-items: center;
+            }
+
+            &--away {
+                left:293px;
+                top:280px;
+                object-fit: contain;
+                height: 110px;
+                align-items: center;
+            }
+        }
+        
+        .TeamName {
+            display:flex;
+            color:$black;
+            font-size:35px;
+            top:403px;
+            left:76px;
+            width:110px;
+            height:68px;
+            line-height: 34px;
+            align-items: center;
+
+            &--home {
+                top:403px;
+                left:76px;    
+            }
+
+            &--away {
+                top:403px;
+                left:293px;    
+            }
+        }
+
+        .details {
+            color:$black;
+            font-size:25px;
+            width:240px;
+            line-height: 34px;
+
+            &--League {
+                top:514px;
+                left:117px;
+            }
+
+            &--Date {
+                top:540px;
+                left:120px;
+            }
+
+            &--Ground {
+                top:563px;
+                left:118px;
+            }
+        }
+
+        .kickOff {
+            display:flex;
+            color:$black;
+            font-size:87.5px;
+            bottom:43px;
+            right:80px;
+            width:241px;
+            height:68px;
+            line-height: 34px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
