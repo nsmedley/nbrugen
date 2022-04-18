@@ -1,114 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>NBRUFC Generator</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet"> 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Brighton Rugby Club</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href='https://cdn.jsdelivr.net/npm/css.gg/icons/all.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    
+</head>
+
+
   <body>
-
-    <nav>
-        <ul>
-            <li>Pre match poster</li>
-            <li>Team lineup</li>
-            <li>Weekend fixtures</li>
-            <li>Weekend results</li>
-        </ul>
-    </nav>
-
-    <main>
-        <div class="options">
-            <!-- Squad -->
-            <div class="inputField">
-                <label for="squad">Squad:</label>
-                <input id="squad" type="text" placeholder="1st xv">
+    <main class="home">
+        <div class="nav">
+            <div class="nav__item">
+                <a href="match.html">
+                    <div class="nav__item__wrapper">
+                        <span class="gg-inpicture"></span>
+                        Match Poster
+                    </div>
+                </a>
             </div>
-
-            <!-- Home or Away Fixture -->
-            <div class="inputField">
-                <label for="home" class="radioLabel">Home</label>
-                <input id="home" type="radio" value="home" name="homeaway">
-                <label for="away" class="radioLabel">Away</label>
-                <input id="away" type="radio" value="away" name="homeaway">
+            <div class="nav__item">
+                <div class="nav__item__wrapper">
+                    <span class="gg-user-list"></span>
+                    Lineup  
+                </div>
             </div>
-            
-            <!-- Team -->
-            <div class="inputField">
-                <label for="TeamName">Opponent name:</label>
-                <input id="TeamName" type="text" placeholder="Team Name">
+            <div class="nav__item">
+                <div class="nav__item__wrapper">
+                    <span class="gg-menu-boxed"></span>
+                    Results
+                </div>
             </div>
-            <div class="inputField">
-                <label for="TeamLogo">Opponent logo:</label>
-                <input id="TeamLogo" type="file" />
-            </div>
-
-            <!-- Details -->
-            <div class="inputField">
-                <label for="league">League:</label>
-                <input id="league" type="text">
-            </div>
-            <div class="inputField">
-                <label for="date">Date:</label>
-                <input id="date" type="text">
-            </div>
-            <div class="inputField">
-                <label for="ground">Ground:</label>
-                <input id="ground" type="text">
-            </div>
-
-            <!-- Kick off -->
-            <div class="inputField">
-                <label for="kickOff">Kick off time:</label>
-                <input id="kickOff" type="text">
-            </div>
-
-            <!-- Buttons -->
-            <div class="inputField buttons">
-                <input type="button" value="Generate" id="generate">
-                <input type="button" value="Download" id="download">
-            </div>
-        </div>
-
-        <div class="liveview">
-
-            <div class="preview" id="previewImage">
-                <div class="previewPane">Please note: This is a preview, things may appear broken or misaligned.</div>
-                <img src="images/prematchposterBG.jpg" id="preivewimage" />
-            </div>
-
         </div>
     </main>
 
-    <div class="downloadview">
-        <div class="hiddenPreview" id="hiddenPreview">
-            <div class="squad"></div>
-            <div class="NBTeam">New Brighton</div>
-            <div class="NBTeamLogo TeamLogoContainer">
-                <img src="images/New_Brighton.png" class="NBlogo" />
-            </div>
-            <div class="TeamName"></div>
-            <div class="OtherTeamLogo TeamLogoContainer">
-                <img class="TeamLogo logo" src="" />
-            </div>
-            <div class="details details--League"></div>
-            <div class="details details--Date"></div>
-            <div class="details details--Ground"></div>
-            <div class="kickOff"></div>
-            <img src="images/prematchposterBG.jpg" class="bg" />
-        </div>
-    </div>
-
-
-	<script src="scripts.js"></script>
+	<script src="scripts/index.js"></script>
   </body>
 </html>

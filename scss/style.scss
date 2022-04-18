@@ -1,0 +1,308 @@
+//Colors
+$darkblue: #052240;
+$blue: #092c6e;
+$lightblue: #103b8f;
+$orange: #fb914d;
+$black: #202020;
+$white: #ffffff;
+//Fonts
+$bebas: 'Bebas Neue', cursive;
+$os: 'Open Sans', sans-serif;
+
+//Global
+body {
+    background:$darkblue;
+    padding:0;
+    margin:0;
+}
+
+//Home
+.home {
+    .nav {
+        height:100vh;
+
+        &__item {
+            background:$blue;
+            color:$white;
+            font-family: $bebas;
+            font-size: 38px;
+            height:33.333vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            &:hover {
+                transition: all .5s ease;
+                background:lighten($blue, 10%);
+
+                span {
+                    transition: all .5s ease;
+                    top:-10px;
+                }
+            }
+
+            :not(:hover) {
+                span {
+                    transition: all .5s ease;
+                    top:0px;
+                }
+            }
+
+            &:nth-child(even) {
+                background:$lightblue;
+
+                &:hover {
+                    transition: all .5s ease;
+                    background:darken($lightblue, 10%);
+                }
+            }
+
+            &__wrapper {
+                display:grid;
+                justify-items: center;
+
+                span {
+                    transform: scale(var(--ggs,2));
+                    margin-bottom: 15px;
+                    top:0px;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+
+//Match
+.match {
+
+    &__options {
+        background: $darkblue;
+        padding: 20px;
+
+        &__input {
+            width:100%;
+
+            input, select {
+                width: 100%;
+                box-sizing: border-box;
+                margin-bottom: 10px;
+                height: 40px;
+                border-radius: 6px;
+                border:0;
+                padding: 0 10px
+            }
+
+            &--download {
+                background:$orange;
+                color:$white;
+                font-family:$bebas;
+                font-size:24px;
+                border-radius: 6px;
+                box-sizing: border-box;
+                transition: all .3s ease;
+                cursor: pointer;
+                height:40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:hover {
+                    background: darken($orange, 10%);
+                }
+            }
+        }
+
+        &--back {
+            font-family: $os;
+            height:40px;
+            cursor: pointer;
+
+            a {
+                text-decoration: none;
+                color: $white;
+                display:flex;
+
+                i {
+                    display:inline-block;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    &__preview {
+        overflow: hidden;
+
+        canvas {
+            height:100% !important;
+            width:100% !important;
+            object-fit: contain;
+        }
+    }
+
+    &__generator {
+        width: 874px;
+        height: 874px;
+        font-family: $bebas;
+        position: absolute;
+        left: -9999px;
+        top:0;
+        overflow: hidden;
+
+        &--overlay {
+            width:100%;
+            position: absolute;
+            top:0%;
+            left:0%;
+            z-index: 10;
+        }
+
+        &--squad {
+            position: absolute;
+            color:$white;
+            font-size: 60px;
+            top: 20.8%;
+            left: 19.8%;
+        }
+
+        &--nbcrest {
+            position: absolute;
+            top:34.4%;
+            left: -9999px;
+
+            img {
+                max-width: 110px;
+                max-height: 90px;
+            }
+
+            &.home {
+                left:8.9%
+            }
+
+            &.away {
+                left:34.4%;
+            }
+        }
+
+        &--oppcrest {
+            position: absolute;
+            top:34.4%;
+
+            img {
+                max-width: 110px;
+                max-height: 90px;
+            }
+
+            &.home {
+                left:8.9%
+            }
+
+            &.away {
+                left:34.4%;
+            }
+        }
+
+        &--nb {
+            position: absolute;
+            color:$black;
+            font-size: 35px;
+            line-height: 30px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width:156px;
+            height:60px;
+            top: 47.1%;
+            left: -9999px;
+
+            &.home {
+                left: 6%
+            }
+
+            &.away {
+                left: 30.8%;
+            }
+        }
+
+        &--opponent {
+            position: absolute;
+            color:$black;
+            font-size: 35px;
+            line-height: 30px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width:156px;
+            height:60px;
+            top: 47.1%;
+
+            &.home {
+                left: 6%;
+            }
+
+            &.away {
+                left: 30.8%;
+            }
+        }
+
+        &--divison {
+            position: absolute;
+            color:$black;
+            font-size: 25px;
+            top: 59%;
+            left: 6.5%;
+            width: 360px;
+            text-align: center;
+        }
+
+        &--date {
+            position: absolute;
+            color:$black;
+            font-size: 25px;
+            top: 61.8%;
+            left: 6.7%;
+            width: 360px;
+            text-align: center;
+        }
+
+        &--kickoff {
+            position: absolute;
+            color:$black;
+            font-size: 87.5px;
+            bottom: 2.3%;
+            right: 2.9%;
+            width: 350px;
+            text-align: center;
+        }
+
+        &--ground {
+            position: absolute;
+            color:$black;
+            font-size: 25px;
+            top: 64.5%;
+            left: 6.5%;
+            width: 360px;
+            text-align: center;
+        }
+
+        &--picture {
+            position: absolute;
+            right: -2%;
+            width: 50%;
+            bottom: 18.9%;
+        }
+
+        &--background {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

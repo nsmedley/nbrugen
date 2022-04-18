@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Brighton Rugby Club</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href='https://cdn.jsdelivr.net/npm/css.gg/icons/all.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css" integrity="sha512-vZpXDvc3snY9J1W8GrnxqDr/+vP1nSTfk8apH1r0wQvOab6fkPhaeqAMlydW68MECAjRR05tu4SOJcwjZgPg5A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+  <body>
+    <main class="match">
+
+        <div class="match__options">
+            <div class="match__options--back"><a href="index.html"><i class="gg-arrow-left"></i> Go Back</a></div>  
+
+            <div class="match__options__input match__options__input--select" id="squad">
+                <select id="squadselect">
+                    <option disabled selected>Choose squad</option>
+                    <option value="1">1st Team</option>
+                    <option value="2">2nd Team</option>
+                    <option value="colts">Colts</option>
+                </select>
+            </div>
+
+            <div class="match__options__input match__options__input--select" id="venue">
+                <select id="homeOrAway">
+                    <option disabled selected>Home or Away</option>
+                    <option>Home</option>
+                    <option>Away</option>
+                </select>
+            </div>
+
+            <div class="match__options__input match__options__input--select" id="opponent">
+                <select id="oppositionteams">
+                </select>
+            </div>
+
+            <div class="match__options__input match__options__input--text" id="league">
+                <input type="text" class="league" placeholder="Leave blank if league game" autocomplete="off">
+            </div>
+
+            <div class="match__options__input match__options__input--text" id="date">
+                <input type="text" id="datepicker" placeholder="Date" autocomplete="off">
+            </div>
+
+            <div class="match__options__input match__options__input--text" id="time">
+                <input type="text" id="timepicker" placeholder="Kick off time" autocomplete="off">
+            </div>
+
+            <div class="match__options__input match__options__input--select" id="picture">
+                <select id="playerPicture">
+                    <option disabled selected>Select player picture</option>
+
+                    <optgroup label="1st XV Players">
+                        <option value="1" data-src="images/players/1/1.png">Pitty - Black kit</option>
+                        <option value="2" data-src="images/players/1/2.png"></option>
+                        <option value="3" data-src="images/players/1/3.png"></option>
+                        <option value="4" data-src="images/players/1/4.png"></option>
+                        <option value="5" data-src="images/players/1/5.png"></option>
+                    </optgroup>
+
+                    <optgroup label="2nd XV Players">
+                        <option value="1" data-src="images/players/2/1.png"></option>
+                        <option value="2" data-src="images/players/2/2.png"></option>
+                        <option value="3" data-src="images/players/2/3.png"></option>
+                        <option value="4" data-src="images/players/2/4.png"></option>
+                        <option value="5" data-src="images/players/2/5.png"></option>
+                    </optgroup>
+
+                    <optgroup label="Colts Players">
+                        <option value="1" data-src="images/players/colts/1.png">Andi - Blue kit</option>
+                        <option value="2" data-src="images/players/colts/2.png"></option>
+                        <option value="3" data-src="images/players/colts/3.png"></option>
+                        <option value="4" data-src="images/players/colts/4.png"></option>
+                        <option value="5" data-src="images/players/colts/5.png"></option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="match__options__input match__options__input--download">Download</div>
+        </div>
+
+        <div class="match__preview">
+        </div>
+
+        <div class="match__generator">
+            <img class="match__generator--overlay" src="images/blanks/match-overlay.png" />
+            <div class="match__generator--squad"></div>
+            <div class="match__generator--nbcrest"><img src="images/blanks/newbrighton.png"/></div>
+            <div class="match__generator--oppcrest"><img src=""/></div>
+            <div class="match__generator--nb">New Brighton</div>
+            <div class="match__generator--opponent"></div>
+            <div class="match__generator--divison"></div>
+            <div class="match__generator--date"></div>
+            <div class="match__generator--kickoff"></div>
+            <div class="match__generator--ground"></div>
+            <img class="match__generator--picture" src="" />
+            <img class="match__generator--background" src="images/blanks/match.jpg" />
+        </div>
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js" integrity="sha512-ux1VHIyaPxawuad8d1wr1i9l4mTwukRq5B3s8G3nEmdENnKF5wKfOV6MEUH0k/rNT4mFr/yL+ozoDiwhUQekTg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
+    <script src="scripts/match.js"></script>
+  </body>
+</html>

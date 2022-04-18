@@ -1,0 +1,88 @@
+body { background: #052240; padding: 0; margin: 0; }
+
+.home .nav { height: 100vh; }
+
+.home .nav__item { background: #092c6e; color: #ffffff; font-family: "Bebas Neue", cursive; font-size: 38px; height: 33.333vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; cursor: pointer; }
+
+.home .nav__item a { color: inherit; text-decoration: none; }
+
+.home .nav__item:hover { -webkit-transition: all .5s ease; transition: all .5s ease; background: #0d3f9d; }
+
+.home .nav__item:hover span { -webkit-transition: all .5s ease; transition: all .5s ease; top: -10px; }
+
+.home .nav__item :not(:hover) span { -webkit-transition: all .5s ease; transition: all .5s ease; top: 0px; }
+
+.home .nav__item:nth-child(even) { background: #103b8f; }
+
+.home .nav__item:nth-child(even):hover { -webkit-transition: all .5s ease; transition: all .5s ease; background: #0b2861; }
+
+.home .nav__item__wrapper { display: -ms-grid; display: grid; justify-items: center; }
+
+.home .nav__item__wrapper span { -webkit-transform: scale(var(--ggs, 2)); transform: scale(var(--ggs, 2)); margin-bottom: 15px; top: 0px; position: relative; }
+
+.match__options { background: #052240; padding: 20px; }
+
+.match__options__input { width: 100%; }
+
+.match__options__input input, .match__options__input select { width: 100%; -webkit-box-sizing: border-box; box-sizing: border-box; margin-bottom: 10px; height: 40px; border-radius: 6px; border: 0; padding: 0 10px; }
+
+.match__options__input--download { background: #fb914d; color: #ffffff; font-family: "Bebas Neue", cursive; font-size: 24px; border-radius: 6px; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all .3s ease; transition: all .3s ease; cursor: pointer; height: 40px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.match__options__input--download:hover { background: #fa721b; }
+
+.match__options--back { font-family: "Open Sans", sans-serif; height: 40px; cursor: pointer; }
+
+.match__options--back a { text-decoration: none; color: #ffffff; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.match__options--back a i { display: inline-block; margin-right: 10px; }
+
+.match__preview { overflow: hidden; }
+
+.match__preview canvas { height: 100% !important; width: 100% !important; -o-object-fit: contain; object-fit: contain; }
+
+.match__generator { width: 874px; height: 874px; font-family: "Bebas Neue", cursive; position: absolute; left: -9999px; top: 0; overflow: hidden; }
+
+.match__generator--overlay { width: 100%; position: absolute; top: 0%; left: 0%; z-index: 10; }
+
+.match__generator--squad { position: absolute; color: #ffffff; font-size: 60px; top: 20.8%; left: 19.8%; }
+
+.match__generator--nbcrest { position: absolute; top: 34.4%; left: -9999px; }
+
+.match__generator--nbcrest img { max-width: 110px; max-height: 90px; }
+
+.match__generator--nbcrest.home { left: 8.9%; }
+
+.match__generator--nbcrest.away { left: 34.4%; }
+
+.match__generator--oppcrest { position: absolute; top: 34.4%; }
+
+.match__generator--oppcrest img { max-width: 110px; max-height: 90px; }
+
+.match__generator--oppcrest.home { left: 8.9%; }
+
+.match__generator--oppcrest.away { left: 34.4%; }
+
+.match__generator--nb { position: absolute; color: #202020; font-size: 35px; line-height: 30px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; text-align: center; width: 156px; height: 60px; top: 47.1%; left: -9999px; }
+
+.match__generator--nb.home { left: 6%; }
+
+.match__generator--nb.away { left: 30.8%; }
+
+.match__generator--opponent { position: absolute; color: #202020; font-size: 35px; line-height: 30px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; text-align: center; width: 156px; height: 60px; top: 47.1%; }
+
+.match__generator--opponent.home { left: 6%; }
+
+.match__generator--opponent.away { left: 30.8%; }
+
+.match__generator--divison { position: absolute; color: #202020; font-size: 25px; top: 59%; left: 6.5%; width: 360px; text-align: center; }
+
+.match__generator--date { position: absolute; color: #202020; font-size: 25px; top: 61.8%; left: 6.7%; width: 360px; text-align: center; }
+
+.match__generator--kickoff { position: absolute; color: #202020; font-size: 87.5px; bottom: 2.3%; right: 2.9%; width: 350px; text-align: center; }
+
+.match__generator--ground { position: absolute; color: #202020; font-size: 25px; top: 64.5%; left: 6.5%; width: 360px; text-align: center; }
+
+.match__generator--picture { position: absolute; right: -2%; width: 50%; bottom: 18.9%; }
+
+.match__generator--background { width: 100%; height: 100%; }
+/*# sourceMappingURL=style.css.map */
