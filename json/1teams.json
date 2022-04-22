@@ -2,42 +2,50 @@
 	{
 		"teamName": "Ashton-Under-Lyne",
 		"teamLogo": "/images/1/ashton.png",
-		"teamGround": "St Albans Avenue"
+		"teamGround": "St Albans Avenue",
+		"teamSquad": ""
 	},
 	{
 		"teamName": "Birchfield",
 		"teamLogo": "/images/1/birchfield.png",
-		"teamGround": "Wilmere Lane Sports Fields"
+		"teamGround": "Wilmere Lane Sports Fields",
+		"teamSquad": ""
 	},
 	{
 		"teamName": "Bury",
 		"teamLogo": "/images/1/bury.png",
-		"teamGround": "Bury Sports Club"
+		"teamGround": "Bury Sports Club",
+		"teamSquad": ""
 	},
 	{
 		"teamName": "Clitheroe",
 		"teamLogo": "/images/1/.png",
-		"teamGround": ""
+		"teamGround": "",
+		"teamSquad": ""
 	},
 	{
 		"teamName": "Colne & Nelson",
 		"teamLogo": "/images/1/.png",
-		"teamGround": ""
+		"teamGround": "",
+		"teamSquad": ""
 	},
 	{
 		"teamName": "Didsbury Toc H",
 		"teamLogo": "/images/1/.png",
-		"teamGround": ""
+		"teamGround": "",
+		"teamSquad": ""
 	},
 	{
 		"teamName": "Liverpool Medical School",
 		"teamLogo": "/images/1/.png",
-		"teamGround": ""
+		"teamGround": "",
+		"teamSquad": ""
 	},
 	{
 		"teamName": "Marple",
 		"teamLogo": "/images/1/.png",
-		"teamGround": ""
+		"teamGround": "",
+		"teamSquad": ""
 	},
 	{
 		"teamName": "Old Bedians",
@@ -47,7 +55,8 @@
 	{
 		"teamName": "Ruskin Park",
 		"teamLogo": "/images/1/.png",
-		"teamGround": ""
+		"teamGround": "",
+		"teamSquad": ""
 	},
 
 
@@ -55,81 +64,97 @@
     {
 		"teamName": "Anselmians",
 		"teamLogo": "/images/1/anselmians.png",
-		"teamGround": "Malone Field"
+		"teamGround": "Malone Field",
+		"teamSquad": ""
 	},
     {
 		"teamName": "Aspull",
 		"teamLogo": "/images/1/aspull.png",
-		"teamGround": "Woodshaw Park"
+		"teamGround": "Woodshaw Park",
+		"teamSquad": ""
+	},
+    {
+		"teamName": "Ellsmere Port",
+		"teamLogo": "/images/1/ellsmere-port.png",
+		"teamGround": "",
+		"teamSquad": "1st XV"
 	},
     {
 		"teamName": "",
 		"teamLogo": "/images/1/.png",
-		"teamGround": ""
+		"teamGround": "",
+		"teamSquad": ""
 	},
     {
 		"teamName": "",
 		"teamLogo": "/images/1/.png",
-		"teamGround": ""
+		"teamGround": "",
+		"teamSquad": ""
 	},
     {
 		"teamName": "",
 		"teamLogo": "/images/1/.png",
-		"teamGround": ""
+		"teamGround": "",
+		"teamSquad": ""
 	},
     {
 		"teamName": "",
 		"teamLogo": "/images/1/.png",
-		"teamGround": ""
+		"teamGround": "",
+		"teamSquad": ""
 	},
     {
 		"teamName": "",
 		"teamLogo": "/images/1/.png",
-		"teamGround": ""
+		"teamGround": "",
+		"teamSquad": ""
 	},
     {
 		"teamName": "",
 		"teamLogo": "/images/1/.png",
-		"teamGround": ""
+		"teamGround": "",
+		"teamSquad": ""
 	},
     {
 		"teamName": "",
 		"teamLogo": "/images/1/.png",
-		"teamGround": ""
+		"teamGround": "",
+		"teamSquad": ""
 	},
     {
 		"teamName": "",
 		"teamLogo": "/images/1/.png",
-		"teamGround": ""
+		"teamGround": "",
+		"teamSquad": ""
 	},
     {
 		"teamName": "",
 		"teamLogo": "/images/1/.png",
-		"teamGround": ""
+		"teamGround": "",
+		"teamSquad": ""
 	},
     {
 		"teamName": "",
 		"teamLogo": "/images/1/.png",
-		"teamGround": ""
+		"teamGround": "",
+		"teamSquad": ""
 	},
     {
 		"teamName": "",
 		"teamLogo": "/images/1/.png",
-		"teamGround": ""
+		"teamGround": "",
+		"teamSquad": ""
 	},
     {
 		"teamName": "",
 		"teamLogo": "/images/1/.png",
-		"teamGround": ""
+		"teamGround": "",
+		"teamSquad": ""
 	},
     {
 		"teamName": "",
 		"teamLogo": "/images/1/.png",
-		"teamGround": ""
-	},
-    {
-		"teamName": "",
-		"teamLogo": "/images/1/.png",
-		"teamGround": ""
+		"teamGround": "",
+		"teamSquad": ""
 	}
 ]

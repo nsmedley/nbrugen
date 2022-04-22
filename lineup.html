@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Brighton Rugby Club</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href='https://cdn.jsdelivr.net/npm/css.gg/icons/all.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css" integrity="sha512-vZpXDvc3snY9J1W8GrnxqDr/+vP1nSTfk8apH1r0wQvOab6fkPhaeqAMlydW68MECAjRR05tu4SOJcwjZgPg5A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+  <body>
+    <main class="lineup">
+
+        <div class="lineup__options">
+            <div class="lineup__options--back"><a href="index.html"><i class="gg-arrow-left"></i> Go Back</a></div>  
+
+            <div class="lineup__options__input lineup__options__input--select" id="squad">
+                <select id="squadselect">
+                    <option disabled selected>Choose squad</option>
+                    <option value="1">1st Team</option>
+                    <option value="2">2nd Team</option>
+                    <option value="colts">Colts</option>
+                </select>
+            </div>
+
+            <div class="lineup__options__input lineup__options__input--select" id="venue">
+                <select id="homeOrAway">
+                    <option disabled selected>Home or Away</option>
+                    <option>Home</option>
+                    <option>Away</option>
+                </select>
+            </div>
+
+            <div class="lineup__options__input lineup__options__input--select" id="opponent">
+                <select id="oppositionteams">
+                </select>
+            </div>
+
+            <div class="lineup__options__input lineup__options__input--text" id="date">
+                <input type="text" id="datepicker" placeholder="Date" autocomplete="off">
+            </div>
+
+            <div class="lineup__options__input lineup__options__input--text" id="time">
+                <input type="text" id="timepicker" placeholder="Kick off time" autocomplete="off">
+            </div>
+
+            <div class="lineup__options__input lineup__options__input--player" id="time">
+                <select id="playingPos" class="playingPos">
+                    <option disabled selected>Select position</option>
+                    <optgroup label="Starting XV">
+                        <option value="1">1. Prop</option>
+                        <option value="2">2. Hooker</option>
+                        <option value="3">3. Prop</option>
+                        <option value="4">4. Second row</option>
+                        <option value="5">5. Second row</option>
+                        <option value="6">6. Flanker</option>
+                        <option value="7">7. Flanker</option>
+                        <option value="8">8. Number 8</option>
+                        <option value="9">9. Scrum-half</option>
+                        <option value="10">10. Fly-half</option>
+                        <option value="11">11. Winger</option>
+                        <option value="12">12. Inside center</option>
+                        <option value="13">13. Outside center</option>
+                        <option value="14">14. Winger</option>
+                        <option value="15">15. Fullback</option>
+                    </optgroup>
+                    <optgroup label="Subs">
+                        <option value="16">16.</option>
+                        <option value="17">17.</option>
+                        <option value="18">18.</option>
+                        <option value="19">19.</option>
+                        <option value="20">20.</option>
+                        <option value="21">21.</option>
+                    </optgroup>
+                </select>
+
+                <input type="text" placeholder="Player Name" autocomplete="off" id="playerName" class="playerName">
+
+                <div class="youth">
+                    <input type="checkbox" id="youthPlayer">
+                    <label for="youthPlayer">Youth system player</label>
+                </div>
+
+                <div class="addPlayer">Add Player <span class="gg-add"></span></div>
+            </div>
+
+            <div class="lineup__options__input lineup__options__input--download">Download</div>
+        </div>
+
+        <div class="lineup__preview">
+        </div>
+
+        <div class="lineup__generator">
+            <img class="lineup__generator--overlay" src="images/blanks/match-overlay.png" />
+            <div class="lineup__generator--nb">New Brighton</div>
+            <div class="lineup__generator--opponent"></div>
+            <div class="lineup__generator--date"></div>
+            <div class="lineup__generator--nbcrest"><img src="images/blanks/newbrighton.png"/></div>
+            <div class="lineup__generator--oppcrest"><img src=""/></div>
+            <img class="lineup__generator--background" src="images/blanks/lineup.jpg" />
+        </div>
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js" integrity="sha512-ux1VHIyaPxawuad8d1wr1i9l4mTwukRq5B3s8G3nEmdENnKF5wKfOV6MEUH0k/rNT4mFr/yL+ozoDiwhUQekTg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
+    <script src="scripts/lineup.js"></script>
+  </body>
+</html>

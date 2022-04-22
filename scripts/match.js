@@ -12,7 +12,7 @@ $(()=>{
         if($(this).val() == '1'){
             $('.match__generator--squad').html("1st XV");
             $('.match__generator--divison').html("ADM Championship");
-            jsonUrl = '../json/1teams.json';
+            jsonUrl = 'json/1teams.json';
         } else if($(this).val() == '2'){
             $('.match__generator--squad').html("2nd XV");
             $('.match__generator--divison').html("NOWIRUL Division 4 West");
@@ -156,24 +156,5 @@ $(()=>{
             $(".match__preview canvas").remove();
             $(".match__preview").append(canvas);
         });
-    });
-
-    //Sort
-    $.fn.extend({
-        sortSelect() {
-            let options = this.find("option"),
-                arr = options.map(function(_, o) { return { t: $(o).text(), v: o.value }; }).get();
-    
-            arr.sort((o1, o2) => { // sort select
-                let t1 = o1.t.toLowerCase(), 
-                    t2 = o2.t.toLowerCase();
-                return t1 > t2 ? 1 : t1 < t2 ? -1 : 0;
-            });
-    
-            options.each((i, o) => {
-                o.value = arr[i].v;
-                $(o).text(arr[i].t);
-            });
-        }
     });
 });

@@ -2,7 +2,7 @@ body { background: #052240; padding: 0; margin: 0; }
 
 .home .nav { height: 100vh; }
 
-.home .nav__item { background: #092c6e; color: #ffffff; font-family: "Bebas Neue", cursive; font-size: 38px; height: 33.333vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; cursor: pointer; }
+.home .nav__item { background: #092c6e; color: #ffffff; font-family: "Bebas Neue", cursive; font-size: 38px; height: 50vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; cursor: pointer; text-decoration: none; }
 
 .home .nav__item a { color: inherit; text-decoration: none; }
 
@@ -20,11 +20,13 @@ body { background: #052240; padding: 0; margin: 0; }
 
 .home .nav__item__wrapper span { -webkit-transform: scale(var(--ggs, 2)); transform: scale(var(--ggs, 2)); margin-bottom: 15px; top: 0px; position: relative; }
 
+@media screen and (min-width: 992px) { .match { display: -webkit-box; display: -ms-flexbox; display: flex; } }
+
 .match__options { background: #052240; padding: 20px; }
 
 .match__options__input { width: 100%; }
 
-.match__options__input input, .match__options__input select { width: 100%; -webkit-box-sizing: border-box; box-sizing: border-box; margin-bottom: 10px; height: 40px; border-radius: 6px; border: 0; padding: 0 10px; }
+.match__options__input input, .match__options__input select { width: 100%; -webkit-box-sizing: border-box; box-sizing: border-box; margin-bottom: 10px; height: 40px; border-radius: 6px; border: 0; padding: 0 10px; background: #ffffff; }
 
 .match__options__input--download { background: #fb914d; color: #ffffff; font-family: "Bebas Neue", cursive; font-size: 24px; border-radius: 6px; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all .3s ease; transition: all .3s ease; cursor: pointer; height: 40px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
@@ -85,4 +87,144 @@ body { background: #052240; padding: 0; margin: 0; }
 .match__generator--picture { position: absolute; right: -2%; width: 50%; bottom: 18.9%; }
 
 .match__generator--background { width: 100%; height: 100%; }
+
+@media screen and (min-width: 992px) { .lineup { display: -webkit-box; display: -ms-flexbox; display: flex; } }
+
+.lineup__options { background: #052240; padding: 20px; }
+
+.lineup__options__input { width: 100%; }
+
+.lineup__options__input input, .lineup__options__input select { width: 100%; -webkit-box-sizing: border-box; box-sizing: border-box; margin-bottom: 10px; height: 40px; border-radius: 6px; border: 0; padding: 0 10px; background: #ffffff; }
+
+.lineup__options__input--player { display: -ms-grid; display: grid; -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; -ms-grid-rows: auto 40px; grid-template-rows: auto 40px; gap: 10px; background: #092c6e; padding: 10px; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 10px; margin-bottom: 10px; }
+
+.lineup__options__input--player .playingPos { -ms-grid-row: 1; -ms-grid-row-span: 1; grid-row: 1 / 2; -ms-grid-column: 1; -ms-grid-column-span: 2; grid-column: 1 / 3; }
+
+.lineup__options__input--player .playerName { -ms-grid-row: 1; -ms-grid-row-span: 1; grid-row: 1 / 2; -ms-grid-column: 3; -ms-grid-column-span: 3; grid-column: 3 / 6; }
+
+.lineup__options__input--player .youth { background: #052240; border-radius: 6px; color: #ffffff; font-family: "Bebas Neue", cursive; -ms-grid-row: 2; -ms-grid-row-span: 1; grid-row: 2 / 3; -ms-grid-column: 1; -ms-grid-column-span: 3; grid-column: 1 / 4; padding: 0 8px; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.lineup__options__input--player .youth input { display: inline-block; width: 24px; height: 24px; margin: 0; padding: 0; }
+
+.lineup__options__input--player .youth label { display: inline-block; }
+
+.lineup__options__input--player .addPlayer { background: #14CA52; color: #ffffff; font-family: "Bebas Neue", cursive; -ms-grid-row: 2; -ms-grid-row-span: 1; grid-row: 2 / 3; -ms-grid-column: 4; -ms-grid-column-span: 2; grid-column: 4 / 6; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-transition: all .3s ease; transition: all .3s ease; border-radius: 6px; }
+
+.lineup__options__input--player .addPlayer span { display: inline-block; margin-left: 5px; }
+
+.lineup__options__input--player .addPlayer:hover { background: #0f9c3f; }
+
+.lineup__options__input--download { background: #fb914d; color: #ffffff; font-family: "Bebas Neue", cursive; font-size: 24px; border-radius: 6px; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all .3s ease; transition: all .3s ease; cursor: pointer; height: 40px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.lineup__options__input--download:hover { background: #fa721b; }
+
+.lineup__options--back { font-family: "Open Sans", sans-serif; height: 40px; cursor: pointer; }
+
+.lineup__options--back a { text-decoration: none; color: #ffffff; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.lineup__options--back a i { display: inline-block; margin-right: 10px; }
+
+.lineup__preview { overflow: hidden; }
+
+.lineup__preview canvas { height: 100% !important; width: 100% !important; -o-object-fit: contain; object-fit: contain; }
+
+.lineup__generator { width: 874px; height: 874px; font-family: "Bebas Neue", cursive; position: absolute; left: -9999px; top: 0; overflow: hidden; }
+
+.lineup__generator--overlay { width: 100%; position: absolute; top: 0%; left: 0%; z-index: 10; }
+
+.lineup__generator--squad { position: absolute; color: #ffffff; font-size: 60px; top: 20.8%; left: 19.8%; }
+
+.lineup__generator--nbcrest { position: absolute; top: 87.6%; left: -9999px; }
+
+.lineup__generator--nbcrest img { max-width: 110px; max-height: 90px; }
+
+.lineup__generator--nbcrest.home { left: 66.4%; }
+
+.lineup__generator--nbcrest.away { left: 87%; }
+
+.lineup__generator--oppcrest { position: absolute; top: 87.6%; }
+
+.lineup__generator--oppcrest img { max-width: 110px; max-height: 90px; }
+
+.lineup__generator--oppcrest.home { left: 66.4%; }
+
+.lineup__generator--oppcrest.away { left: 87%; }
+
+.lineup__generator--nb { position: absolute; color: #202020; font-size: 22px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; text-align: center; width: 220px; left: 64.7%; }
+
+.lineup__generator--nb.home { top: 17%; }
+
+.lineup__generator--nb.away { top: 22%; }
+
+.lineup__generator--opponent { position: absolute; color: #202020; font-size: 22px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; text-align: center; width: 220px; left: 64.7%; }
+
+.lineup__generator--opponent.home { top: 17%; }
+
+.lineup__generator--opponent.away { top: 22%; }
+
+.lineup__generator--date { position: absolute; color: #202020; font-size: 17.5px; top: 24.6%; left: 65.9%; width: 200px; text-align: center; }
+
+.lineup__generator__player { position: absolute; font-size: 36px; color: #202020; }
+
+.lineup__generator__player .youthPlayer { background: url("/images/blanks/newbrighton.png"); display: block; position: absolute; background-size: cover; width: 37px; height: 32px; right: -45px; top: 5px; }
+
+.lineup__generator__player--1 { top: 29.5%; left: 11.4%; }
+
+.lineup__generator__player--2 { top: 34.7%; left: 11.4%; }
+
+.lineup__generator__player--3 { top: 39.9%; left: 11.4%; }
+
+.lineup__generator__player--4 { top: 45.1%; left: 11.4%; }
+
+.lineup__generator__player--5 { top: 50.3%; left: 11.4%; }
+
+.lineup__generator__player--6 { top: 55.5%; left: 11.4%; }
+
+.lineup__generator__player--7 { top: 60.7%; left: 11.4%; }
+
+.lineup__generator__player--8 { top: 65.9%; left: 11.4%; }
+
+.lineup__generator__player--9 { top: 29.5%; left: 52.4%; }
+
+.lineup__generator__player--10 { top: 34.7%; left: 52.4%; }
+
+.lineup__generator__player--11 { top: 39.9%; left: 52.4%; }
+
+.lineup__generator__player--12 { top: 45.1%; left: 52.4%; }
+
+.lineup__generator__player--13 { top: 50.3%; left: 52.4%; }
+
+.lineup__generator__player--14 { top: 55.5%; left: 52.4%; }
+
+.lineup__generator__player--15 { top: 60.7%; left: 52.4%; }
+
+.lineup__generator__player--16 { font-size: 20px; color: #ffffff; top: 77%; left: 11.2%; }
+
+.lineup__generator__player--16 .youthPlayer { width: 18px; height: 15px; right: -25px; }
+
+.lineup__generator__player--17 { font-size: 20px; color: #ffffff; top: 79.8%; left: 11.2%; }
+
+.lineup__generator__player--17 .youthPlayer { width: 18px; height: 15px; right: -25px; }
+
+.lineup__generator__player--18 { font-size: 20px; color: #ffffff; top: 77%; left: 35.2%; }
+
+.lineup__generator__player--18 .youthPlayer { width: 18px; height: 15px; right: -25px; }
+
+.lineup__generator__player--19 { font-size: 20px; color: #ffffff; top: 79.8%; left: 35.2%; }
+
+.lineup__generator__player--19 .youthPlayer { width: 18px; height: 15px; right: -25px; }
+
+.lineup__generator__player--20 { font-size: 20px; color: #ffffff; top: 77%; left: 54.5%; }
+
+.lineup__generator__player--20 .youthPlayer { width: 18px; height: 15px; right: -25px; }
+
+.lineup__generator__player--21 { font-size: 20px; color: #ffffff; top: 79.8%; left: 54.5%; }
+
+.lineup__generator__player--21 .youthPlayer { width: 18px; height: 15px; right: -25px; }
+
+.lineup__generator__player--22 { font-size: 20px; color: #ffffff; top: 77%; left: 59.5%; }
+
+.lineup__generator__player--22 .youthPlayer { width: 18px; height: 15px; right: -25px; }
+
+.lineup__generator--background { width: 100%; height: 100%; }
 /*# sourceMappingURL=style.css.map */
